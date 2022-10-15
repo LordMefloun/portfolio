@@ -26,9 +26,14 @@
         <nav>
             <ul>
                 <li><a href="" class="active">Domů</a></li>
-                <li><a href="" class="button">Kontaktuj mě</a></li>
+                <li><a href="" class="button">Kontaktuj&nbsp;mě</a></li>
                 <li><a href="">Dovednosti</a></li>
             </ul>
+            <div id="burgerbutton" onclick="Burger()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
     <div id="content">
@@ -74,6 +79,24 @@
     <footer>
         <p>&copy; 2022 Made by <strong>LordMefloun</strong>. All Rights Reserved </p>
     </footer>
+
+
+    <script>
+        var burger = document.querySelector("nav ul");
+
+
+        function Burger()
+        {
+            if (burger.classList.contains("aktivniburger"))
+            {
+                burger.classList.remove("aktivniburger");
+            }
+            else
+            {
+                burger.classList.add("aktivniburger");
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     display: flex;
     width: max-content;
     margin-right: 40px;
+    margin-left: 20px;
 }
 
 
@@ -56,6 +57,19 @@ header {
     justify-content: center;
 }
 
+#burgerbutton div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+#burgerbutton {
+    display: none;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+}
+
 article {
     width: max-content;
 }
@@ -72,6 +86,7 @@ section {
 
 
 nav ul {
+    padding: 10px 10px 0px 10px;
     line-height: 50px;
     display: flex;
     list-style: none;
@@ -139,8 +154,7 @@ p {
     display: none;
 }
 
-ul li a:hover::before
-{
+ul li a:hover::before {
     display: none;
 }
 
@@ -167,7 +181,10 @@ footer {
     display: flex;
 }
 
-article {}
+.aktivniburger
+{
+    display: flex;
+}
 
 
 
@@ -192,7 +209,7 @@ article {}
     font-weight: normal;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
     #maincontent {
         width: 100%;
     }
@@ -210,11 +227,23 @@ article {}
     }
 
     nav ul {
+        display: none;
+    }
+
+    #burgerbutton {
         display: block;
     }
 
+    
+
     #content {
-        margin-top: 320px;
+        margin-top: 200px;
         min-height: 95vh;
     }
+    .aktivniburger
+    {
+        display: block;
+    }
+
 }
+
