@@ -223,6 +223,27 @@ footer {
 .spigot {width: 50%; background-color: orange;}
 
 
+#kontakt table
+{
+    width: 90%;
+}
+
+#kontakt td
+{
+    margin: 0px;
+    padding: 20px;
+}
+
+#kontakt tr:nth-child(odd)
+{
+    background-color: black;
+}
+#kontakt tr:nth-child(even)
+{
+    background-color: rgb(25, 25, 25);
+}
+
+
 
 @font-face {
     font-family: 'Roboto';
