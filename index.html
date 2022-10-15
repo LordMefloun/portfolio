@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jsem C#, Javascript, Java (Spigot), PHP Web Developer">
-    <meta name="keywords" content="tomáš zbedina, javascript developer, csharp developer, c# developer, dotnet developer, .net developer, net developer, php developer, spigot developer, minecraft plugin developer, minecraft developer, web developer, webdeveloper, developer
+    <meta name="keywords"
+        content="tomáš zbedina, javascript developer, csharp developer, c# developer, dotnet developer, .net developer, net developer, php developer, spigot developer, minecraft plugin developer, minecraft developer, web developer, webdeveloper, developer
                                                   javascript programator, csharp programator, c# programator, dotnet programator, .net programator, net programator, php programator, spigot programator, minecraft programator, minecraft plugin programator, web programator, webmaster, programator">
     <title>Tomáš Zbedina | Portfolio</title>
 
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+    <link href="./fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,9 +30,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="" class="active">Domů</a></li>
-                <li><a href="" class="button">Kontaktuj&nbsp;mě</a></li>
-                <li><a href="">Dovednosti</a></li>
+                <li><a href="#" class="active">Domů</a></li>
+                <li><a href="#kontakt" class="button">Kontaktuj&nbsp;mě</a></li>
+                <li><a href="#dovednosti">Dovednosti</a></li>
             </ul>
             <div id="burgerbutton" onclick="Burger()">
                 <div></div>
@@ -74,6 +79,31 @@
             </article>
 
         </section>
+
+        <section>
+            <article id="dovednosti">
+                <p class="skillname">Web Development (PHP)</p>
+                <div class="container">
+                    <div class="skills php">60%</div>
+                </div>
+
+                <p class="skillname">Spigot</p>
+                <div class="container">
+                    <div class="skills spigot">50%</div>
+                </div>
+
+                <p class="skillname">Csharp</p>
+                <div class="container">
+                    <div class="skills cs">30%</div>
+                </div>
+
+
+            </article>
+
+            <article id="kontakt">
+
+            </article>
+        </section>
     </div>
 
     <footer>
@@ -85,14 +115,11 @@
         var burger = document.querySelector("nav ul");
 
 
-        function Burger()
-        {
-            if (burger.classList.contains("aktivniburger"))
-            {
+        function Burger() {
+            if (burger.classList.contains("aktivniburger")) {
                 burger.classList.remove("aktivniburger");
             }
-            else
-            {
+            else {
                 burger.classList.add("aktivniburger");
             }
         }

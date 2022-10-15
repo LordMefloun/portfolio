@@ -2,6 +2,10 @@
     font-family: 'Roboto';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 #brand {
     color: white;
@@ -37,8 +41,14 @@ body {
     color: white;
 }
 
+p
+{
+    color: rgba(245, 245, 245, 0.774);
+}
+
 #content {
     margin-top: 120px;
+    padding-left: 10px;
     min-height: 95vh;
 }
 
@@ -71,7 +81,8 @@ header {
 }
 
 article {
-    width: max-content;
+    margin-bottom: 30px;
+    width: 40%;
 }
 
 #maincontent {
@@ -166,11 +177,11 @@ ul li a:hover::before {
     text-decoration: none;
     font-weight: bold;
 
-    transition: opacity 270ms;
+    transition: filter 270ms;
 }
 
 .button:hover {
-    opacity: 0.5;
+    filter: contrast(0.6);
 }
 
 footer {
@@ -186,6 +197,30 @@ footer {
     display: flex;
 }
 
+* {box-sizing: border-box}
+
+
+
+.container {
+  width: 90%;
+  background-color: rgb(25, 25, 25);
+}
+
+.skillname
+{
+    margin-bottom: 0px;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.php {width: 60%; background-color: #2196F3;}
+.cs {width: 30%; background-color: #21f360;}
+.spigot {width: 50%; background-color: orange;}
 
 
 
