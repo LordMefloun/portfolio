@@ -32,6 +32,8 @@ ul {
 
 body {
     margin: 0px;
+    background-color: rgb(17, 17, 17);
+    color: white;
 }
 
 #content {
@@ -49,7 +51,7 @@ header {
     top: 0;
     padding: 20px 0px 20px 0px;
     width: 100%;
-    background-color: rgb(255, 153, 19);
+    background-color: rgba(0, 0, 0, 0.829);
     display: flex;
     justify-content: center;
 }
@@ -137,6 +139,11 @@ p {
     display: none;
 }
 
+ul li a:hover::before
+{
+    display: none;
+}
+
 .button {
     color: white;
     background: rgb(255, 115, 0);
@@ -154,7 +161,7 @@ p {
 
 footer {
     width: 100%;
-    background-color: orangered;
+    background-color: black;
     padding: 10px 0px 0px 0px;
     justify-content: center;
     display: flex;
